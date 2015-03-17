@@ -258,7 +258,7 @@ func match(s string, f func(byte) bool, i int) (matched string, next byte, j int
 }
 
 func isAlpha(ch byte) bool {
-	return 'a' <= ch && ch <= 'z' || 'A' <= ch && ch <= 'Z' || ch == '_'
+	return 'a' <= ch && ch <= 'z' || 'A' <= ch && ch <= 'Z' || ch == '_' || ch == '-'
 }
 
 func isDigit(ch byte) bool {
